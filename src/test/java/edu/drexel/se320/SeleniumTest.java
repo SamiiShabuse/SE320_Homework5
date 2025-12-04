@@ -15,11 +15,20 @@ import org.junit.jupiter.api.Test;
 public class SeleniumTest {
 
     // UPDATE THIS PATH
-    protected final String uiPath = "file:///C:/Users/sshab/OneDrive/Documents/SE320/Week 10/SE320_Homework5/web/index.html";
+    protected final String uiPath = "file:///C:/Users/sshab/Documents/School/SE320/SE320_Homework5/web/index.html";
+
+
+    // Helper: a  create a Firefox driver with a small implicit wait.
+    protected WebDriver makeDriver() {
+        FirefoxOptions options = new FirefoxOptions();
+        WebDriver driver = new FirefoxDriver(options);
+        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(2));
+        return driver;
+    }
 
     @Test
     public void testOneItem() {
-        WebDriver driver = new FirefoxDriver();
+        WebDriver driver = makeDriver();
         try {
             driver.get(uiPath);
             // Find the + to click to display the form to add a todo

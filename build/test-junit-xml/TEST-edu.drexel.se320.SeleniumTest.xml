@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.drexel.se320.SeleniumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-12-04T18:56:44.797Z" hostname="TREVORYOUNG" time="14.137">
+<testsuite name="edu.drexel.se320.SeleniumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-12-04T22:57:34.152Z" hostname="SAMIIWORKAHOLIC" time="3.017">
   <properties/>
-  <testcase name="testOneItem()" classname="edu.drexel.se320.SeleniumTest" time="14.137"/>
+  <testcase name="testOneItem()" classname="edu.drexel.se320.SeleniumTest" time="3.017"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Dec 04, 2025 1:56:45 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
-WARNING: The geckodriver version (0.35.0) detected in PATH at C:\Tools\geckodriver\geckodriver.exe might not be compatible with the detected firefox version (145.0.2); currently, geckodriver 0.36.0 is recommended for firefox 145.*, so it is advised to delete the driver in PATH and retry
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
