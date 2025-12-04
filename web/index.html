@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>SE320 Homework 5 Test UI</title>
+<script>
+function toggle(id) {
+    var plus = document.getElementById(id+"plus");
+    var minus = document.getElementById(id+"minus");
+    var content = document.getElementById(id);
+
+    if (content.style.display == "none") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+
+    var tmp = plus.style.display;
+    plus.style.display = minus.style.display;
+    minus.style.display = tmp;
+}
+var itemcount = 0;
+var active = 0;
+function addTODO(text) {
+    console.log("adding list item: "+text);
+    var text = document.createTextNode(text);
+    var btn = document.createElement('button');
+    btn.appendChild(document.createTextNode("Delete"));
+    itemcount++;
+    active++;
+    var li = document.createElement('li');
+    li.id = "item"+itemcount;
+    btn.id = "button"+itemcount;
+    li.appendChild(text);
+    li.appendChild(btn);
+    btn.onclick = function() { 
+        console.log("removing list item: "+text);
+        li.parentNode.removeChild(li);
+        active--;
+        if (active < 3) {
+            document.getElementById("addbutton").hidden = false;
+        }
+    };
+
+    var list = document.getElementById("thelist");
+    list.appendChild(li);
+
+    if (active == 3 ) {
+        document.getElementById("addbutton").hidden = true;
+    }
+}
+</script>
+<style>
+a   { color: blue; text-decoration: underline; }
+</style>
+</head>
+<body>
+    [<span id="controls1plus" onclick="toggle('controls1')">+</span><span id="controls1minus"
+                                                                        onclick="toggle('controls1')"
+                                                                        style="display:none;">-</span>]
+        Controls
+        <span id="controls1" style="display:none">
+            <form>
+                Item to add:<input type="text" name="item" id="itemtoadd">
+                <input id="addbutton" type="button" value="Add to list" onclick="addTODO(document.getElementById('itemtoadd').value);"><br/>
+            </form>
+        </span>
+
+
+    <span id="content">
+        <h3>TODOs</h3>
+        <ul id="thelist">
+        </ul>
+    </span>
+</body>
+</html>
