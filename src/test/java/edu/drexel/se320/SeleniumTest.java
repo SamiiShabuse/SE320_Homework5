@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
 public class SeleniumTest {
 
     // UPDATE THIS PATH
-    protected final String uiPath = "file:///Users/csg63/teaching/se320/assignments/hw5/web/index.html";
+    protected final String uiPath = "file:///home/sus24/SE320/SE320_Homework5/web/index.html";
 
     @Test
     public void testOneItem() {
