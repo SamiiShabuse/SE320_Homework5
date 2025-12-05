@@ -19,7 +19,7 @@ function toggle(id) {
 }
 var itemcount = 0;
 var active = 0;
-function addTODO(text) {
+function addTodoItem(text) {
     console.log("adding list item: "+text);
     var text = document.createTextNode(text);
     var btn = document.createElement('button');
@@ -60,7 +60,7 @@ a   { color: blue; text-decoration: underline; }
         <span id="controls1" style="display:none">
             <form>
                 Item to add:<input type="text" name="item" id="itemtoadd">
-                <input id="addbutton" type="button" value="Add to list" onclick="addTODO(document.getElementById('itemtoadd').value);"><br/>
+                <input id="addbutton" type="button" value="Add to list" onclick="addTodoItem(document.getElementById('itemtoadd').value);"><br/>
             </form>
         </span>
 

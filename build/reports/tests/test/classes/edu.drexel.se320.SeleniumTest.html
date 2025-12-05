@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">9</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.017s</div>
+<div class="counter">32.741s</div>
 <p>duration</p>
 </div>
 </td>
@@ -63,6 +63,9 @@
 <li>
 <a href="#">Tests</a>
 </li>
+<li>
+<a href="#">Standard error</a>
+</li>
 </ul>
 <div class="tab">
 <h2>Tests</h2>
@@ -75,11 +78,76 @@
 </tr>
 </thead>
 <tr>
+<td class="success">testAddButtonHiddenAtThreeItemsAndReappearsAfterDelete()</td>
+<td class="success">6.879s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddEmptyStringCreatesBlankTodoItem()</td>
+<td class="success">2.582s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddMultipleTodosInOrder()</td>
+<td class="success">2.800s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddSingleTodoShowsUpWithCorrectText()</td>
+<td class="success">2.632s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testControlsCanBeRevealedAndHidden()</td>
+<td class="success">2.680s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteAllTodosLeavesEmptyList()</td>
+<td class="success">4.791s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testOneItem()</td>
-<td class="success">3.017s</td>
+<td class="success">2.584s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRemovingTodoDoesNotAffectOthers()</td>
+<td class="success">5.073s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTogglingControlsDoesNotAffectTodoList()</td>
+<td class="success">2.720s</td>
 <td class="success">passed</td>
 </tr>
 </table>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre id="class-stderr">Dec 05, 2025 12:38:08 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The geckodriver version (0.35.0) detected in PATH at C:\Tools\geckodriver\geckodriver.exe might not be compatible with the detected firefox version (145.0.2); currently, geckodriver 0.36.0 is recommended for firefox 145.*, so it is advised to delete the driver in PATH and retry
+Dec 05, 2025 12:38:13 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The geckodriver version (0.35.0) detected in PATH at C:\Tools\geckodriver\geckodriver.exe might not be compatible with the detected firefox version (145.0.2); currently, geckodriver 0.36.0 is recommended for firefox 145.*, so it is advised to delete the driver in PATH and retry
+Dec 05, 2025 12:38:16 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The geckodriver version (0.35.0) detected in PATH at C:\Tools\geckodriver\geckodriver.exe might not be compatible with the detected firefox version (145.0.2); currently, geckodriver 0.36.0 is recommended for firefox 145.*, so it is advised to delete the driver in PATH and retry
+Dec 05, 2025 12:38:22 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The geckodriver version (0.35.0) detected in PATH at C:\Tools\geckodriver\geckodriver.exe might not be compatible with the detected firefox version (145.0.2); currently, geckodriver 0.36.0 is recommended for firefox 145.*, so it is advised to delete the driver in PATH and retry
+Dec 05, 2025 12:38:25 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The geckodriver version (0.35.0) detected in PATH at C:\Tools\geckodriver\geckodriver.exe might not be compatible with the detected firefox version (145.0.2); currently, geckodriver 0.36.0 is recommended for firefox 145.*, so it is advised to delete the driver in PATH and retry
+Dec 05, 2025 12:38:28 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The geckodriver version (0.35.0) detected in PATH at C:\Tools\geckodriver\geckodriver.exe might not be compatible with the detected firefox version (145.0.2); currently, geckodriver 0.36.0 is recommended for firefox 145.*, so it is advised to delete the driver in PATH and retry
+Dec 05, 2025 12:38:30 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The geckodriver version (0.35.0) detected in PATH at C:\Tools\geckodriver\geckodriver.exe might not be compatible with the detected firefox version (145.0.2); currently, geckodriver 0.36.0 is recommended for firefox 145.*, so it is advised to delete the driver in PATH and retry
+Dec 05, 2025 12:38:33 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The geckodriver version (0.35.0) detected in PATH at C:\Tools\geckodriver\geckodriver.exe might not be compatible with the detected firefox version (145.0.2); currently, geckodriver 0.36.0 is recommended for firefox 145.*, so it is advised to delete the driver in PATH and retry
+Dec 05, 2025 12:38:38 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+WARNING: The geckodriver version (0.35.0) detected in PATH at C:\Tools\geckodriver\geckodriver.exe might not be compatible with the detected firefox version (145.0.2); currently, geckodriver 0.36.0 is recommended for firefox 145.*, so it is advised to delete the driver in PATH and retry
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="class-stderr">Copy</button>
+</span>
 </div>
 </div>
 <div id="footer">
@@ -89,7 +157,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.2.1</a> at Dec 4, 2025, 5:57:37 PM</p>
+<a href="https://www.gradle.org">Gradle 9.2.1</a> at Dec 5, 2025, 12:38:41 PM</p>
 </div>
 </div>
 </body>
